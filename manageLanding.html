@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Landing</title>
+    <link rel="stylesheet" href="managestyle.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="container">
+      <div class="nav">
+        <div class="logo">
+          <img src="image/logo.svg" />
+        </div>
+        <div class="hamburger"></div>
+        <ul>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+        <div class="button"><a href="#">Get Started</a></div>
+      </div>
+    </div>
+
+    <!-- product -->
+    <div class="container-responsive">
+      <div class="product">
+        <div class="text">
+          <h1>Bring everyone together to build better products.</h1>
+          <p>
+            Manage makes it simple for software teams <br />
+            to plan day-to-day tasks while while keeping the <br />
+            larger team goals in view.
+          </p>
+          <a href="#">Get Started</a>
+        </div>
+      </div>
+      <div class="persen"><img src="image/illustration-intro.svg" alt="persentase" /></div>
+      <div class="clear"></div>
+    </div>
+
+    <!-- argumen -->
+    <div class="argumen">
+      <div class="number">
+        <div class="list">
+          <h2>What's different about Manage?</h2>
+          <p>
+            Manage provides all the functionality your <br />
+            team needs. With the complexity. Our <br />
+            software is tailor-made for modern digital <br />
+            product team.
+          </p>
+        </div>
+        <div class="deskripsi">
+          <ul>
+            <li>
+              <span class="nomer">1</span><span class="head">Track company-wide progress</span><br /><br />
+              <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+            </li>
+            <li>
+              <span class="nomer">2</span><span class="head">Advanced built-in reports</span><br /><br />
+              <p>Set terminal delivery estimates adn track progress toward company goals. Our customisable dashboar helps you build out the reports you need to keep stakeholders informed.</p>
+            </li>
+            <li>
+              <span class="nomer">3</span><span class="head">Everything you need in one place</span><br /><br />
+              <p>Stop jumping in one service to another to communicate, store files, track tasks and share document. Manager offers an all-in-one team productivity solution.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- testimoni -->
+    <div class="testimoni">
+      <div class="testi">
+        <div class="header">
+          <h2>What they've said</h2>
+        </div>
+        <!-- <div class="testi-img">
+          <img src="image/testimonials-slider.jpg" alt="testimoni" />
+        </div> -->
+        <div class="slider">
+          <span id="slide-1"></span>
+          <span id="slide-2"></span>
+          <span id="slide-3"></span>
+          <span id="slide-4"></span>
+          <div class="image-container">
+            <img src="image/testi1.png" class="slide" width="500" height="300" />
+            <img src="image/testi2.png" class="slide" width="500" height="300" />
+            <img src="image/testi3.png" class="slide" width="500" height="300" />
+            <img src="image/testi4.png" class="slide" width="500" height="300" />
+          </div>
+          <div class="buttons">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+          </div>
+        </div>
+        <div class="testi-button">
+          <a href="#">Get started</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer 1 -->
+    <div class="footer-1">
+      <div class="sub-footer">
+        <div class="items-1">
+          <h2>Simplify how your team works today.</h2>
+        </div>
+        <div class="items-2">
+          <a href="#">Get started</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer 2 -->
+    <div class="footer-2">
+      <div class="main-footer">
+        <div class="foot-1">
+          <img src="image/logo.svg" />
+          <ul class="ul-1">
+            <li>
+              <a href="#"><img src="image/facebook.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="image/instagram.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="image/twitter.png" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot-2">
+          <ul class="ul-2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        <div class="foot-3">
+          <ul class="ul-3">
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Privacy Police</a></li>
+          </ul>
+        </div>
+        <div class="form-email">
+          <form>
+            <input class="input-1" email="email" type="text" id="Email" placeholder="Masukkan Email" />
+            <input class="input-2" type="submit" value="Go" />
+          </form>
+          <p>Copyright 2021. All Right Reserved.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav");
+      menuToggle.onclick = function () {
+        menuToggle.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
